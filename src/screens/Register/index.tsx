@@ -10,7 +10,6 @@ import * as Yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 
 import { InputForm } from "../../components/Form/InputForm";
-import { Input } from '../../components/Form/Input';
 import { Button } from "../../components/Form/Button";
 import { CategorySelectButton } from "../../components/Form/CategorySelectButton";
 import { TransactionTypeButton  } from "../../components/Form/TransactionTypeButton";

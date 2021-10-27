@@ -17,24 +17,16 @@ export function AppRoutes(){
         activeTintColor: theme.colors.secondary,
         inactiveTintColor: theme.colors.text,
         labelPosition: 'beside-icon',
+        headerShown: false,
         style: {
           paddingVertical: Platform.OS === 'ios' ? 20 : 0,
           height:88
         }
+      
       }}
-      // screenOptions={
-      //   {
-      //     "tabBarActiveTintColor": "theme.colors.secondary",
-      //     "tabBarInactiveTintColor": "theme.colors.text",
-      //     "tabBarLabelPosition": "beside-icon",
-      //     "tabBarStyle": [
-      //       {
-      //         "display": "flex"
-      //       },
-      //       null
-      //     ]
-      //   }
-      // }
+      screenOptions={{
+        headerShown: false
+      }}
     >
       <Screen 
         name ="Listagem"
