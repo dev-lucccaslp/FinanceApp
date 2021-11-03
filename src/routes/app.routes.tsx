@@ -13,19 +13,29 @@ export function AppRoutes(){
   const theme = useTheme();
   return(
     <Navigator
-      tabBarOptions={{
-        activeTintColor: theme.colors.secondary,
-        inactiveTintColor: theme.colors.text,
-        labelPosition: 'beside-icon',
-        headerShown: false,
-        style: {
-          paddingVertical: Platform.OS === 'ios' ? 20 : 0,
-          height:88
-        }
-      
-      }}
+      // tabBarOptions={{
+      //   activeTintColor: theme.colors.secondary,
+      //   inactiveTintColor: theme.colors.text,
+      //   labelPosition: 'beside-icon',
+      //   headerShown: false,
+      //   style: {
+      //     paddingVertical: Platform.OS === 'ios' ? 20 : 0,
+      //     height:88
+      //   }
+      // }}
+
+
       screenOptions={{
-        headerShown: false
+        headerShown: false,
+        tabBarActiveTintColor: "#FF872C",
+        tabBarInactiveTintColor: "#969CB2",
+        tabBarLabelPosition: "beside-icon",
+        "tabBarStyle": [
+          {
+            "display": "flex"
+          },
+          null
+        ]
       }}
     >
       <Screen 
